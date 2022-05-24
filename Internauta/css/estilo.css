@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+nav{
+    background-color: lightgray;
+}
+
+footer{
+	background: #00408A;
+	padding: 1em 0;
+	text-align: center;
+	margin-top: auto;
+	color: white;
+}
+
+body {
+	/*background-image: url(/Internauta/img/white-wall-living-room-have-sofa-and-decoration-3d-rendering.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: white;
+}
+
+.section-padding {
+	padding: 100px 0;
+}
+/*.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}*/
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+/*.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}*/
+/*.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}*/
+/*.w-100 {
+	height: 100vh;
+}*/
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.services .card-body i {
+	font-size: 50px;
+}
+.team .card-body i {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+#seccion{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fff;
+}
+#seccion .contenedor{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+}
+#seccion .contenedor .contacto_info{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: 450px;
+	background: lightgray;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#seccion .contenedor .contacto_info h2{
+	color: #000;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#seccion .contenedor .contacto_info .info {
+	position: relative;
+	margin: 20px 0;
+}
+
+#seccion .contenedor .contacto_info .info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+#seccion .contenedor .contacto_info .info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+
+#seccion .contenedor .contacto_info .info li span:nth-child(1) i{
+	max-width: 100%;
+	transition: 0.2s;
+}
+
+#seccion .contenedor .contacto_info .info li span:nth-child(2){
+	color: black;
+	margin-left: 10px;
+	font-weight: 300;
+	transition: 0.2s;
+}
+
+#seccion .contenedor .contacto_info .info li:hover span:nth-child(1) i,
+#seccion .contenedor .contacto_info .info li:hover span:nth-child(2){
+	color: #fff;
+	transition: 0.2s;
+}
+
+#seccion .contenedor .contacto_info .sci{
+	position: relative;
+	display: flex;
+}
+
+#seccion .contenedor .contacto_info .sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+
+#seccion .contenedor .contacto_info .sci li a{
+	text-decoration: none;
+}
+#seccion .contenedor .contacto_info .sci li a i{
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+#seccion .contenedor .contacto_info .sci li:hover a i{
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+#seccion .contenedor .contactForm{
+	position: absolute;
+	padding: 70px 50px;
+	background: #fff;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: calc(100% - 150px);
+	height: 100%;
+	
+}
+
+#seccion .contenedor .contactForm h2{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#seccion .contenedor .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox{
+	position: relative;
+	margin: 0 0 35px 0;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox.w50{
+	width: 47%;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox.w100{
+	width: 100%;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox input,
+#seccion .contenedor .contactForm .formBox .inputBox textarea{
+	width: 100% !important;
+	padding: 5px 0;
+	resize: none;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid gray;
+	outline: none;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox textarea{
+	min-height: 120px;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox input:focus ~ span,
+#seccion .contenedor .contactForm .formBox .inputBox textarea:focus ~ span,
+#seccion .contenedor .contactForm .formBox .inputBox input:valid ~ span,
+#seccion .contenedor .contactForm .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-20px);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: gray;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background: #00408A;
+	color: whitesmoke;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+	transition: 0.3s;
+}
+
+#seccion .contenedor .contactForm .formBox .inputBox input[type="submit"]:hover{
+	opacity: 0.9;
+	transition: 0.3s;
+}
+
+#map{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.mapBox{
+	position: relative;
+	width: 1000px;
+	height: 500px;
+	background: #fff;
+}
+
+.mapBox iframe{
+	width: 100%;
+	height: 100%;
+}
+
+#solicitarBtn{
+	background: #00408A;
+}
+
+.accion{
+	top: 30px;
+	right: 30px;
+}
+
+.accion .perfil{
+	position: relative;
+	margin-left: 10px;
+	margin-right: 5px;
+	right: 5px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.accion .perfil img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.accion .menuCuenta{
+	position: absolute;
+	top: 110px;
+	right: 10px;
+	background: white;
+	width: 200px;
+	box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	transition: 0.5s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.accion .menuCuenta.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+.accion .menuCuenta::before{
+	content: '';
+	position: absolute;
+	top: -32px;
+	right: 2px;
+	width: 0;
+	height: 0;
+	border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 30px solid white;
+	z-index: -1;
+}
+
+.accion .menuCuenta h5{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px 0;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+
+.accion .menuCuenta h5 span{
+	font-size: 14px;
+	color: #cecece;
+	font-weight: 400;
+}
+
+.accion .menuCuenta ul li{
+	list-style: none;
+	padding: 10px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+	display: flex;
+}
+
+.accion .menuCuenta ul li i{
+	margin-right: 10px;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.accion .menuCuenta ul li:hover i{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.accion .menuCuenta ul li a{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	color: #555;
+	transition: 0.5s;
+}
+
+.accion .menuCuenta ul li:hover a{
+	color: black;
+}
+
+
+.menuPrincipal img{
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 83vh;
+	z-index: -1;
+}
+
+.boxContent{
+	position: relative;
+	width: 700px;
+	left: 215px;
+	bottom: 50px;
+	z-index: 2;
+}
+
+.box{
+	position: relative;
+	width: 800px;
+	height: 200px;
+	left: 15%;
+	top: 120px;
+	border-radius: 5px;
+	background: lightgrey;
+	z-index: 1;
+}
+
+
+.escondido{
+	overflow: hidden;
+}
+
+.centrado{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes ldio-u3z1tgvkkb8 {
+	0% { transform: rotate(0deg) }
+	50% { transform: rotate(180deg) }
+	100% { transform: rotate(360deg) }
+  }
+  .ldio-u3z1tgvkkb8 div {
+	position: absolute;
+	animation: ldio-u3z1tgvkkb8 0.5s linear infinite;
+	width: 160px;
+	height: 160px;
+	top: 20px;
+	left: 20px;
+	border-radius: 50%;
+	box-shadow: 0 5px 0 0 #2077dc;
+	transform-origin: 80px 82.5px;
+  }
+  .loadingio-spinner-eclipse-5ok9dm247kb {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	overflow: hidden;
+	background-color: transparent;
+  }
+  .ldio-u3z1tgvkkb8 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform: translateZ(0) scale(1);
+	backface-visibility: hidden;
+	transform-origin: 0 0;
+  }
+  .ldio-u3z1tgvkkb8 div { box-sizing: content-box; }
+
+  section{
+	  position: relative;
+	  width: 100%;
+	  height: 81vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(/Internauta/img/white-wall-living-room-have-sofa-and-decoration-3d-rendering.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 10vw;
+	font-weight: 700;
+	white-space: nowrap;
+	user-select: none;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.selectColor{
+	position: relative;
+	padding: 10px;
+	border: none;
+	border-right: 10px solid #fff;
+	outline: none;
+	width: 200px;
+	border-radius: 5px;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+#search-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#search-section .search-area{
+	position: relative;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 50px;
+	padding: 20px;
+}
+
+#search-section .search-area select{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#search-section .search-area input:focus{
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+#search-section .search-area button.btn-primary{
+	border: none;
+	border-radius: 10px;
+	background: #00408A;
+	padding: 12px;
+}
+
+#property-section{
+	width: 100%;
+	text-align: center;
+}
+
+#property-section .property-list{
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	color: #000;
+}
+
+#property-section .property-list p{
+	font-weight: 500;
+}
+
+#property-section .property-list .image{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#property-section .property-list .image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#property-section .text-right{
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;
+}
+
+
+#secction{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fff;
+}
+#secction .contenido{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+}
+#secction .contenido .contacto_info{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: 450px;
+	background: lightgray;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#secction .contenido .contacto_info h2{
+	color: #000;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#secction .contenido .contacto_info .info {
+	position: relative;
+	margin: 20px 0;
+}
+
+#secction .contenido .contacto_info .info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+#secction .contenido .contacto_info .info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+
+#secction .contenido .contacto_info .info li span:nth-child(1) i{
+	max-width: 100%;
+	transition: 0.2s;
+}
+
+#secction .contenido .contacto_info .info li span:nth-child(2){
+	color: black;
+	margin-left: 10px;
+	font-weight: 300;
+	transition: 0.2s;
+}
+
+#secction .contenido .contacto_info .info li:hover span:nth-child(1) i,
+#secction .contenido .contacto_info .info li:hover span:nth-child(2){
+	color: #fff;
+	transition: 0.2s;
+}
+
+#secction .contenido .contacto_info .sci{
+	position: relative;
+	display: flex;
+}
+
+#secction .contenido .contacto_info .sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+
+#secction .contenido .contacto_info .sci li a{
+	text-decoration: none;
+}
+#secction .contenido .contacto_info .sci li a i{
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+#secction .contenido .contacto_info .sci li:hover a i{
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+#secction .contenido .contactForm{
+	position: absolute;
+	padding: 70px 50px;
+	background: white;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: calc(100% - 150px);
+	height: 100%;
+}
+
+#secction .contenido .contactForm h2{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#secction .contenido .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+#secction .contenido .contactForm .formBox .inputBox{
+	position: relative;
+	margin: 0 0 25px 0;
+}
+
+#secction .contenido .contactForm .formBox .inputBox.w50{
+	width: 47%;
+}
+
+#secction .contenido .contactForm .formBox .inputBox.w100{
+	width: 100%;
+}
+
+#secction .contenido .contactForm .formBox .inputBox input,
+#secction .contenido .contactForm .formBox .inputBox textarea{
+	width: 100% !important;
+	padding: 5px 0;
+	resize: none;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid gray;
+	outline: none;
+}
+
+#secction .contenido .contactForm .formBox .inputBox textarea{
+	min-height: 120px;
+}
+
+#secction .contenido .contactForm .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+#secction .contenido .contactForm .formBox .inputBox input:focus ~ span,
+#secction .contenido .contactForm .formBox .inputBox textarea:focus ~ span,
+#secction .contenido .contactForm .formBox .inputBox input:valid ~ span,
+#secction .contenido .contactForm .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-20px);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: gray;
+}
+
+#secction .contenido .contactForm .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background: #00408A;
+	color: whitesmoke;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+	transition: 0.3s;
+}
+
+#secction .contenido .contactForm .formBox .inputBox input[type="submit"]:hover{
+	opacity: 0.9;
+	transition: 0.3s;
+}
+
+#navegacion nav{
+	background: white;
+}
+
+.espacio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 100px;
+   }
+   
+   .chevron {
+	 position: absolute;
+	 width: calc(1rem * 3.5);
+	 height: calc(0.2rem * 0.8);
+	 opacity: 0;
+	 transform: scale(0.3);
+	 animation: move-chevron 3s ease-out infinite;
+   }
+   
+   .chevron:first-child {
+	 animation: move-chevron 3s ease-out 1s infinite;
+   }
+   
+   .chevron:nth-child(2) {
+	 animation: move-chevron 3s ease-out 2s infinite;
+   }
+   
+   .chevron:before,
+   .chevron:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: white;
+   }
+   
+   .chevron:before {
+	left: 0;
+	transform: skewY(30deg);
+   }
+   
+   .chevron:after {
+	right: 0;
+	width: 50%;
+	transform: skewY(-30deg);
+   }
+   
+   @keyframes move-chevron {
+	25% {
+	 opacity: 1;
+	   }
+	33.3% {
+	 opacity: 1;
+	 transform: translateY(calc(0.6rem * 3.8));
+	}
+	66.6% {
+	 opacity: 1;
+	 transform: translateY(calc(0.6rem * 5.2));
+	}
+	100% {
+	 opacity: 0;
+	 transform: translateY(calc(0.6rem * 8)) scale(0.5);
+	}
+   }

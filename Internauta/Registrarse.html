@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/Internauta/register.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./Registrarse_files/style.css">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="./Registrarse_files/bootstrap-icons.css">
+  <!--Bootstrap CSS-->
+  <link href="./Registrarse_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Registrarse</title>
+</head>
+<body class="fondo fuente">
+
+  <div class="container w-75 bg-primary mt-5 rounded shadow-lg">
+    <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+      </div>
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-end">
+          <img src="./Registrarse_files/logo.svg" width="80" alt="Logo Domus">
+        </div>
+
+        <h2 class="fw-bold text-center py-5">Registrarse</h2>
+
+        <!--login-->
+
+        <form action="http://127.0.0.1:5500/Internauta/index.html">
+          <div class="mb-4">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" name="email" id="email" required="">
+          </div>
+          <div class="mb-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required="">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password" id="password" required="">
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </div>
+
+          <div class="my-3">
+            <span>¿Ya tienes una cuenta? <a href="http://127.0.0.1:5500/Internauta/login.html">Iniciar Sesión</a></span><br>
+          </div>
+        </form>
+
+        <!--Login Redes-->
+        <div class="container w-100 mt-4">
+            <div class="row text-center">
+              <div class="col-12 border-top py-2">Iniciar Sesión</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2 d-none d-md-block">
+                      <i class="bi bi-facebook fs-3"></i>
+                    </div>
+                    <div class="col-12 col-md-10 text-center">
+                      Facebook
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-danger w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2 d-none d-md-block">
+                      <i class="bi bi-google fs-3"></i>
+                    </div>
+                    <div class="col-12 col-md-10 text-center">
+                      Google
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Registrarse_files/bootstrap.bundle.min.js.descarga" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

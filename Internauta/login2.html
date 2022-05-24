@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Internauta/stylel.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bg">
+           <div class="box signin">
+               <h2>¿Ya tienes una cuenta?</h2>
+               <button class="signin_button">Iniciar Sesión</button>
+           </div> 
+           <div class="box signup">
+            <h2>¿No tienes una cuenta?</h2>
+            <button class="signup_button">Registrarse</button>
+           </div>
+        </div>
+        <div class="formBox">
+            <div class="form signinForm">
+                <form action="">
+                    <img src="/Internauta/img/logo.svg" alt="Logo Domus">
+                    <h3>Iniciar Sesión</h3>
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="submit" value="Iniciar Sesión">
+                    <a href="/Internauta/cliente.html" class="forgot">¿Has olvidado tu contraseña?</a>
+                </form>
+            </div>
+            <div class="form signupForm">
+                <form action="">
+                    <img src="/Internauta/img/logo.svg" alt="Logo Domus">
+                    <h3>Registrarse</h3>
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Internauta/js/login.js"></script>
+</body>
+</html>
