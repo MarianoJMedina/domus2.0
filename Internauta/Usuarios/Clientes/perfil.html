@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Domus | Home</title>
+	<!-- All CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link href="/Internauta/css/estilo.css" rel="stylesheet">
+</head>
+<body class="escondido">
+    <div id="cargando" class="centrado bg-white">
+		<div class="loadingio-spinner-eclipse-5ok9dm247kb">
+			<div class="ldio-u3z1tgvkkb8">
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow">
+		<a class="navbar-brand fs-1" href="/Internauta/Usuarios/Clientes/cliente.html">
+		  <img src="/Internauta/img/logo.svg" alt="Logo Domus" width="100" height="100" class="d-inline-block align-text-center">
+		  Domus
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<div class="navbar-nav ms-auto text-center">
+				<a class="nav-link active fs-6" aria-current="page" href="/Internauta/Usuarios/Clientes/cliente.html">Inicio</a>
+				<a class="nav-link fs-6" href="catalogo.html">Catálogo</a>
+				<a class="nav-link fs-6" href="contacto.html">Contacto</a>
+			</div>
+			<div class="accion">
+				<div class="perfil">
+					<img src="/Internauta/img/20220116_191502.jpg" alt="">
+				</div>
+				<div class="menuCuenta">
+					<h5>Mariano<br><span>Cliente</span></h5>
+					<ul>
+						<li><i class="bi bi-person-circle"></i><a href="">Mi Perfil</a></li>
+						<li><i class="bi bi-calendar-check"></i><a href="">Mis Citas</a></li>
+						<li><i class="bi bi-box-arrow-left"></i><a href="/Internauta/Usuarios/Internauta/modelo.html">Cerrar Sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+              <li class="breadcrumb-item"><a class="text-dark link-primary" href="cliente.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Mi Perfil</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container-xl px-4 my-4">
+        <div class="row">
+            <div class="col-xl-4">
+                <!-- Profile picture card-->
+                <div class="card mb-4 mb-xl-0 carta-imagen">
+                    <div class="card-header">Foto de Perfil</div>
+                    <div class="card-body text-center profile-picture">
+                        <!-- Profile picture image-->
+                        <img class="" src="/Internauta/img/20220116_191502.jpg" alt="">
+                        <!-- Profile picture help block-->
+                    </div>
+                    <div class="profile-upload-text">
+                        <div class="small font-italic text-muted mb-4"> Formato JPG o PNG (no más de 5 Mb)</div>
+                        <!-- Profile picture upload button-->
+                        <label for="file-upload" class="custom-file-upload">
+                            <i class="bi bi-upload"></i> Subir Imágen
+                        </label>
+                        <input id="file-upload" type="file">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <!-- Account details card-->
+                <div class="card mb-4">
+                    <div class="card-header">Mi Perfil</div>
+                    <div class="card-body">
+                        <form>
+                            <!--
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+                                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                            </div>-->
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">Nombre/s</label>
+                                    <input class="form-control" id="inputFirstName" type="text" required>
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Apellido/s</label>
+                                    <input class="form-control" id="inputLastName" type="text" required>
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-4">
+                                    <label class="small mb-1" for="inputOrgName">Nombre de Organización</label>
+                                    <input class="form-control" id="inputOrgName" type="text">
+                                </div>
+                                <!-- Form Group (location)-->
+                                <div class="col-md-4">
+                                    <label class="small mb-1" for="inputLocation">Provincia</label>
+                                    <input class="form-control" id="inputLocation" type="text" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="small mb-1" for="inputLocation">Localidad</label>
+                                    <input class="form-control" id="inputLocation" type="text" required>
+                                </div>
+                            </div>
+                            <!-- Form Group (email address)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputEmailAddress">Correo electrónico</label>
+                                <input class="form-control" id="inputEmailAddress" type="email" required>
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (phone number)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Teléfono/Celular</label>
+                                    <input class="form-control" id="inputPhone" type="tel" required>
+                                </div>
+                                <!-- Form Group (birthday)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Fecha de Nacimiento</label>
+                                    <input class="form-control" id="inputBirthday" type="date">
+                                </div>
+                            </div>
+                            <!-- Save changes button-->
+                            <button id="solicitarBtn" class="btn btn-primary" type="submit">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<footer>
+    Domus &copy; Todos Los Derechos Reservados 2022
+</footer>
+	
+	<!-- All Js -->
+    <script>
+		function changeColor(getColor){
+			let bg = document.querySelector('.bg');
+			let selectColor = getColor.value
+
+			switch(selectColor){
+				case 'Departamento': 
+					bg.style.backgroundImage = 'url(/Internauta/img/white-wall-living-room-have-sofa-and-decoration-3d-rendering.jpg)';
+					break;
+				case 'Casa': 
+					bg.style.backgroundImage = 'url(/Internauta/img/empty-living-room-with-blue-sofa-plants-and-table-on-empty-white-wall-background-3d-rendering.jpg)';
+					break;
+				case 'Terreno': 
+					bg.style.backgroundImage = 'url(/Internauta/img/white-wall-living-room-have-sofa-and-decoration-3d-rendering.jpg)';
+					break;
+				case 'Quinta': 
+					bg.style.backgroundImage = 'url(/Internauta/img/empty-living-room-with-blue-sofa-plants-and-table-on-empty-white-wall-background-3d-rendering.jpg)';
+					break;
+				case 'PH': 
+					bg.style.backgroundImage = 'url(/Internauta/img/white-wall-living-room-have-sofa-and-decoration-3d-rendering.jpg)';
+					break;
+			}
+		}
+	</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Internauta/js/index.js"></script>
+	<script src="/Internauta/js/menuCuenta.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
