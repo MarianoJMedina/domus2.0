@@ -336,6 +336,7 @@ body {
 	max-width: 150px;
 	padding: 12px;
 	transition: 0.3s;
+	border-radius: 5px;
 }
 
 #seccion .contenedor .contactForm .formBox .inputBox input[type="submit"]:hover{
@@ -836,6 +837,7 @@ body {
 	max-width: 150px;
 	padding: 12px;
 	transition: 0.3s;
+	border-radius: 5px;
 }
 
 #secction .contenido .contactForm .formBox .inputBox input[type="submit"]:hover{
@@ -956,4 +958,85 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.body-property{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.slider-property{
+	position: relative;
+	width: 500px;
+	height: 400px;
+}
+
+.slider-property .thumb{
+	position: absolute;
+	top: 40%;
+	right: 95%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.slider-property .thumb li{
+	list-style: none;
+	width: 100px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	background: rgba(255,255,255,0.2);
+	box-shadow: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(4px);
+	cursor: pointer;
+}
+
+.slider-property .thumb li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.slider-property .thumb li:hover img{
+	transform: scale(1.1);
+}
+.slider-property .imgBox-property{
+	position: absolute;
+	top: 0%;
+	right: 0;
+	width: 450px;
+	height: 80%;
+	background: yellow;
+	background: rgba(255,255,255,0.2);
+	box-shadow: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(4px);
+	display: flex;
+	align-items: center;
+}
+
+.slider-property .imgBox-property img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+#description{
+	text-align: justify;
 }

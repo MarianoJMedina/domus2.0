@@ -235,6 +235,13 @@ body{
     border-radius: 5px;
     object-fit: cover;
 }
+#agenda{
+    background: white;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+}
 .cardBox{
     position: relative;
     width: 100%;
@@ -253,6 +260,9 @@ body{
    border-radius: 5px;
    cursor: pointer; 
 }
+.cardBox .card a{
+    text-decoration: none;
+}
 .cardBox .card:hover{
     background: #00408A;
     transition: 0.3s;
@@ -262,6 +272,15 @@ body{
     font-size: 2em;
     font-weight: 500;
     color: #333;
+}
+.cardBox .card:last-child .numbers{
+    position: relative;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #333;
+}
+.cardBox .card:last-child .iconBox{
+    margin-left: 10px;
 }
 .cardBox .card .cardName{
    color: #999; 
